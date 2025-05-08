@@ -1,10 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import employeeReducer from "./feature/searchSlice";
+import TaskReducer from "./feature/searchSlice";
 
 export const store = configureStore({
-    reducer: {
-        employees: employeeReducer,
-    },
+  reducer: {
+    Tasks: TaskReducer,
+  },
 });
 
 export type RootState = ReturnType<typeof store.getState>;
