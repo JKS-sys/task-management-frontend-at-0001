@@ -11,8 +11,8 @@ const Footer: React.FC = () => {
       <div className="lg:mr-20">
         <p className="text-blue-400 font-semibold">Connect With Us !!</p>
         <div className="flex justify-center items-center gap-4 p-2">
-          <i className="fa-brands fa-github text-blue-400 hover:text-blue-600 text-xl"></i>
-          <i className="fa-brands fa-youtube text-blue-600 hover:text-blue-800 text-xl"></i>
+          <i className="fa-brands fa-github text-black hover:text-blue-600 text-xl"></i>
+          <i className="fa-brands fa-youtube text-red-600 hover:text-blue-800 text-xl"></i>
         </div>
       </div>
       <div>
