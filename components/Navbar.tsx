@@ -12,7 +12,9 @@ const Navbar: React.FC = () => {
   const [token, setToken] = useState<string | null>(null);
   const router = useRouter();
   const dispatch = useDispatch();
-  const searchTask = useSelector((state: RootState) => state.Tasks.searchQuery);
+  const searchEmployee = useSelector(
+    (state: RootState) => state.employees.searchQuery
+  );
 
   useEffect(() => {
     setIsClient(true);
@@ -37,7 +39,7 @@ const Navbar: React.FC = () => {
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     dispatch(setSearchQuery(e.target.value));
-    console.log(searchTask);
+    console.log(searchEmployee);
   };
 
   if (!isClient) return null;
@@ -71,7 +73,7 @@ const Navbar: React.FC = () => {
             className="w-40 md:w-60 px-2 py-1 text-gray-600 text-md font-serif border-none outline-none bg-transparent focus:bg-white "
             name="input"
             placeholder="Search..."
-            value={searchTask}
+            value={searchEmployee}
             onChange={handleChange}
           />
         </div>

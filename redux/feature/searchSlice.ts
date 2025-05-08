@@ -1,22 +1,23 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-interface TaskState {
-  searchQuery: string;
+interface EmployeeState {
+
+    searchQuery: string;
 }
 
-const initialState: TaskState = {
-  searchQuery: "",
+const initialState: EmployeeState = {
+    searchQuery: "",
 };
 
-const TaskSlice = createSlice({
-  name: "Tasks",
-  initialState,
-  reducers: {
-    setSearchQuery: (state, action: PayloadAction<string>) => {
-      state.searchQuery = action.payload;
+const employeeSlice = createSlice({
+    name: "employees",
+    initialState,
+    reducers: {
+        setSearchQuery: (state, action: PayloadAction<string>) => {
+            state.searchQuery = action.payload;
+        },
     },
-  },
 });
 
-export const { setSearchQuery } = TaskSlice.actions;
-export default TaskSlice.reducer;
+export const { setSearchQuery } = employeeSlice.actions;
+export default employeeSlice.reducer;

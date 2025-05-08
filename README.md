@@ -2,20 +2,20 @@
 
 ## Overview
 
-The **Task Management System** is a web application where admins can assign tasks to Tasks, monitor their progress, and update their status. Tasks receive assigned tasks, complete them, and submit a completion URL. The system provides a user-friendly interface with secure authentication for both admin and Tasks.
+The **Task Management System** is a web application where admins can assign tasks to employees, monitor their progress, and update their status. Employees receive assigned tasks, complete them, and submit a completion URL. The system provides a user-friendly interface with secure authentication for both admin and employees.
 
 ## Features
 
 - **Admin Features:**
-  - Assign tasks to Tasks.
+  - Assign tasks to employees.
   - Monitor task progress.
   - Update task status upon completion.
-- **Task Features:**
+- **Employee Features:**
   - View assigned tasks.
   - Submit task completion URL.
   - Track task status.
 - **Authentication & Security:**
-  - Separate login protection for Admin and Tasks.
+  - Separate login protection for Admin and Employees.
   - Secure token-based authentication.
 - **Technologies Used:**
   - **Frontend:** Next.js, React, TypeScript, Tailwind CSS
@@ -42,7 +42,7 @@ Ensure you have the following installed:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/jeya-chandran-jcs/Task-management-frontend
+   git clone https://github.com/jeya-chandran-jcs/employee-management-frontend
    ```
 2. Install dependencies:
    ```sh
@@ -60,8 +60,8 @@ Ensure you have the following installed:
 
 ## Usage
 
-- Admin assigns tasks to Tasks.
-- Tasks complete tasks and submit completion URLs.
+- Admin assigns tasks to employees.
+- Employees complete tasks and submit completion URLs.
 - Admin monitors and updates task statuses.
 
 ## License
